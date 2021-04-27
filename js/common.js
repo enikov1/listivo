@@ -12,6 +12,22 @@ $(document).ready(function () {
 
 	});
 
+	// fields
+
+	$('select.listivo_field').customSelect();
+
+	// $('#listivo_price').inputNumber({
+	// 	allowMaxNumber: 100,
+	// });
+
+	// accordio
+
+	$('.listivo_accordion_item button').on('click', function() {
+		let _this = $(this);
+
+		_this.parent().toggleClass('accordion_active');
+	});
+
 	// swiper
 
 	const featured_slider1 = new Swiper('#featured_slider', {
@@ -79,20 +95,75 @@ $(document).ready(function () {
 
 	const reviews_slider = new Swiper('#slider_reviews', {
 		slidesPerView: 3,
-		spaceBetween: 30,
+		spaceBetween: 35,
 		// loop: true,
 		observer: true,
 		observeParents: true,
 		// centeredSlides: true,
 		// centeredSlidesBounds: true,
+
+		breakpoints: {
+			2280: {
+				slidesPerView: 4,
+			},
+			2720: {
+				slidesPerView: 5,
+			}
+		},
+
 		pagination: {
 			el: '#slider_reviews .swiper-pagination',
 			type: 'bullets',
 			clickable: true,
 		},
 		navigation: {
-			nextEl: document.querySelector('.reviews .slider_arrows-right'),
-			prevEl: document.querySelector('.reviews .slider_arrows-left'),
+			nextEl: document.querySelector('.listivo_reviews .slider_arrows-right'),
+			prevEl: document.querySelector('.listivo_reviews .slider_arrows-left'),
+		},
+	});
+
+	const slider_article_main = new Swiper('#slider_article_main', {
+		slidesPerView: 1,
+		spaceBetween: 35,
+		observer: true,
+		observeParents: true,
+		loop: true,
+
+		pagination: {
+			el: '#slider_article_main .swiper-pagination',
+			type: 'custom',
+			clickable: true,
+			renderCustom: function (swiper, current, total) {
+				return '<i class="fal fa-camera"></i>&nbsp;&nbsp;' + current + ' / ' + total;
+			}
+		},
+		navigation: {
+			nextEl: document.querySelector('#slider_article_main .slider_arrows-right'),
+			prevEl: document.querySelector('#slider_article_main .slider_arrows-left'),
+		},
+	});
+
+	const more_from_user = new Swiper('#more_from_user', {
+		slidesPerView: 4,
+		spaceBetween: 28,
+		observer: true,
+		observeParents: true,
+
+		navigation: {
+			nextEl: document.querySelector('#more_from_user_nav .slider_arrows-right'),
+			prevEl: document.querySelector('#more_from_user_nav .slider_arrows-left'),
+		},
+	});
+
+	const related_article = new Swiper('#related_article', {
+		slidesPerView: 4,
+		spaceBetween: 28,
+		observer: true,
+		observeParents: true,
+
+		navigation: {
+			nextEl: document.querySelector('#related_article_nav .slider_arrows-right'),
+			prevEl: document.querySelector('#related_article_nav .slider_arrows-left'),
 		},
 	});
 	
