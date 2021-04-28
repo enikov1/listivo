@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>18-favorites</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <header class="listivo_header header_bg">
+      <div class="container-max">
+        <div class="listivo_header_logo"><a href="#"><img src="./img/logo_white.png" alt="logo"></a></div>
+        <nav class="listivo_header_nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categories<i class="far fa-chevron-down"></i></a></li>
+            <li><a href="#">Listings<i class="far fa-chevron-down"></i></a></li>
+            <li><a href="#">Search<i class="far fa-chevron-down"></i></a></li>
+            <li><a href="#">Pages<i class="far fa-chevron-down"></i></a></li>
+            <li><a href="#">Moderation</a>
+              <div class="listivo_count listivo_red">5</div>
+            </li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="listivo_header_right">
+          <div class="listivo_header_right-control">
+            <ul>
+              <li><span class="listivo_icon"><i class="fal fa-bell"></i>
+                  <div class="listivo_count listivo_red">2</div></span></li>
+              <li class="listivo_drop_dashboard"><a href="#">Dashboard<i class="far fa-chevron-down"></i></a>
+                <div class="listivo_dashboard_menu">
+                  <div class="listivo_dashboard_menu-header">
+                    <div class="listivo_image"><img src="./img/reviews/2.png" alt="image"></div>
+                    <div class="listivo_text">Amedya J. Hilson</div>
+                  </div>
+                  <div class="listivo_dashboard_menu-nav">
+                    <ul>
+                      <li><a href="#"> <i class="far fa-plus-circle"></i><span>Add Listing</span></a></li>
+                      <li><a href="#"><i class="far fa-list"></i><span>Listings</span></a></li>
+                      <li><a href="#"><i class="far fa-heart"></i><span>Favourites</span>
+                          <div class="listivo_count listivo_yellow">11</div></a></li>
+                      <li><a href="#"><i class="far fa-comment-alt"></i><span>Messages</span>
+                          <div class="listivo_count listivo_purple">7</div></a></li>
+                      <li><a href="#"><i class="far fa-cog"></i><span>Settings</span></a></li>
+                    </ul>
+                  </div>
+                  <div class="listivo_dashboard_menu-nav">
+                    <ul>
+                      <li><a href="#"> <i class="far fa-power-off"></i><span>Sign Out</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul><a class="listivo_button" href="#">Submit Listing
+              <div class="listivo_icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" viewBox="0 0 14.09 14.656"><path d="M7.816,8.488 L7.816,15.283 L6.646,15.283 L6.646,8.488 L0.198,8.488 L0.198,7.393 L6.646,7.393 L6.646,0.628 L7.816,0.628 L7.816,7.393 L14.279,7.393 L14.279,8.488 L7.816,8.488 Z"/></svg></div></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="listivo_dashboard">
+      <div class="container-min">
+        <div class="listivo_title_block">
+          <h1 class="listivo_title">My Favorites</h1>
+          <div class="listivo_title_block-right"><a class="listivo_button_l_white" href="#">Current Package
+              <div class="listivo_icon"><i class="fal fa-chevron-right"></i></div></a><a class="listivo_button_l_white" href="#">Buy Package
+              <div class="listivo_icon"><i class="fal fa-chevron-right"></i></div></a></div>
+        </div>
+      </div>
+      <section class="listivo_dashboard-nav">
+        <div class="container-min">
+          <div class="flex flex-wrap"><a class="listivo_dashboard-nav_item" href="#"><i class="far fa-desktop"></i><span>Moderation</span></a><a class="listivo_dashboard-nav_item" href="#"><i class="far fa-list"></i><span>Listings</span></a><a class="listivo_dashboard-nav_item listivo_active" href="#"><i class="far fa-heart"></i><span>Favorites</span></a><a class="listivo_dashboard-nav_item" href="#"><i class="far fa-comment-alt"></i><span>Messages</span></a><a class="listivo_dashboard-nav_item" href="#"><i class="far fa-cog"></i><span>Settings</span></a></div>
+        </div>
+      </section>
+      <section class="listivo_dashboard-content">
+        <div class="container-min">
+          <div class="listivo_content">
+            <div class="listivo_content-result">
+              <h1 class="listivo_title">24 Result</h1>
+              <div class="listivo_content-result_control"><b>Sort By</b>
+                <select class="listivo_field" name="sort">
+                  <option value="1">Newest Listings</option>
+                  <option value="2">Newest Listings 2</option>
+                  <option value="3">Newest Listings 3</option>
+                  <option value="4">Newest Listings 4</option>
+                  <option value="5">Newest Listings 5</option>
+                </select>
+                <button class="listivo_button_icon listivo_active" type="button"><i class="ti-view-list"></i></button>
+                <button class="listivo_button_icon" type="button"><i class="ti-view-grid"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap flex-between listivo_items listivo_items-listview">
+            <div class="card_item">
+              <div class="card_item-top">
+                <div class="card_item-top_author">
+                  <div class="listivo_image"><img src="./img/card/avatar1.png" alt="image"></div><span class="listivo_text">By Kim Cardy</span>
+                </div><img class="card_item-top_preview" src="./img/card/1.png" alt="image">
+              </div>
+              <div class="card_item-bottom">
+                <div class="card_item-bottom_head">
+                  <div class="flex flex-col"><a class="listivo_title" href="#">Mercedes X-Mark 2021</a>
+                    <ul>
+                      <li><a href="#">Model 2021 </a></li>
+                      <li><a href="#">Petrol</a></li>
+                      <li><a href="#">Manual</a></li>
+                    </ul>
+                  </div><b class="card_item-foot_price">$1,250.00</b>
+                </div>
+                <p class="listivo_text">Eiusmod temporl incididunt utys labore dolor magna aliqua sed enim audy. Lorem ipsum dolor sit amet consectetur adip sicing elit sed eiusmod tempor incididunts.</p>
+                <div class="flex flex-wrap flex-between">
+                  <div class="flex flex-col">
+                    <div class="card_item-foot_text"><i class="fal fa-map-marker-check"></i>18 Bubby Drive, Austin FL 78704</div><span class="card_item-foot_gray">Added 5 days ago</span>
+                  </div>
+                  <button class="listivo_button_r-icon" type="button"><i class="fal fa-heart"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="card_item">
+              <div class="card_item-top">
+                <div class="card_item-top_author">
+                  <div class="listivo_image"><img src="./img/card/avatar2.png" alt="image"></div><span class="listivo_text">By Kim Cardy</span>
+                </div><img class="card_item-top_preview" src="./img/card/2.png" alt="image">
+              </div>
+              <div class="card_item-bottom">
+                <div class="card_item-bottom_head">
+                  <div class="flex flex-col"><a class="listivo_title" href="#">Xig Villa & Resort</a>
+                    <ul>
+                      <li><a href="#">Model 2021 </a></li>
+                      <li><a href="#">Petrol</a></li>
+                      <li><a href="#">Manual</a></li>
+                    </ul>
+                  </div><b class="card_item-foot_price">$740</b>
+                </div>
+                <p class="listivo_text">Eiusmod temporl incididunt utys labore dolor magna aliqua sed enim audy. Lorem ipsum dolor sit amet consectetur adip sicing elit sed eiusmod tempor incididunts.</p>
+                <div class="flex flex-wrap flex-between">
+                  <div class="flex flex-col">
+                    <div class="card_item-foot_text"><i class="fal fa-map-marker-check"></i>18 Bubby Drive, Austin FL 78704</div><span class="card_item-foot_gray">Added 5 days ago</span>
+                  </div>
+                  <button class="listivo_button_r-icon" type="button"><i class="fal fa-heart"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="card_item">
+              <div class="card_item-top">
+                <div class="card_item-top_author">
+                  <div class="listivo_image"><img src="./img/card/avatar2.png" alt="image"></div><span class="listivo_text">By Kim Cardy</span>
+                </div><img class="card_item-top_preview" src="./img/card/3.png" alt="image">
+              </div>
+              <div class="card_item-bottom">
+                <div class="card_item-bottom_head">
+                  <div class="flex flex-col"><a class="listivo_title" href="#">Computer Table & Chair Set</a>
+                    <ul>
+                      <li><a href="#">Model 2021 </a></li>
+                      <li><a href="#">Petrol</a></li>
+                      <li><a href="#">Manual</a></li>
+                    </ul>
+                  </div><b class="card_item-foot_price">$3,250.00 </b>
+                </div>
+                <p class="listivo_text">Eiusmod temporl incididunt utys labore dolor magna aliqua sed enim audy. Lorem ipsum dolor sit amet consectetur adip sicing elit sed eiusmod tempor incididunts.</p>
+                <div class="flex flex-wrap flex-between">
+                  <div class="flex flex-col">
+                    <div class="card_item-foot_text"><i class="fal fa-map-marker-check"></i>18 Bubby Drive, Austin FL 78704</div><span class="card_item-foot_gray">Added 5 days ago</span>
+                  </div>
+                  <button class="listivo_button_r-icon" type="button"><i class="fal fa-heart"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./libs/jquery/jquery.min.js"></script>
+    <script src="./libs/lazysizes/lazysizes.min.js" defer></script>
+    <script src="./libs/swiper/swiper-bundle.min.js" defer></script>
+    <script src="./libs/jquery.custom-select/jquery.custom-select.js" defer></script>
+    <script src="./libs/tooltipster/tooltipster.main.min.js" defer></script>
+    <script src="./js/common.js" defer></script>
+  </body>
+</html>

@@ -20,12 +20,34 @@ $(document).ready(function () {
 	// 	allowMaxNumber: 100,
 	// });
 
-	// accordio
+	// $('.listivo_pay_item label').on('click', function() {
+	// 	let _this = $(this);
+	// 	_this.closest('.listivo_pay_item').addClass('listivo_active').find('input[type="checkbox"]').attr('checked', true);
+	// 	_this.closest('.listivo_pay_item').siblings().find('input[type="checkbox"]').attr('checked', false);
+	// 	_this.closest('.listivo_pay_item').siblings().removeClass('listivo_active');
+
+	// 		// _this.closest('.listivo_pay_item').find('input[type="checkbox"]').attr('checked', true);
+	// 		// _this.closest('.listivo_pay_item').siblings().find('input[type="checkbox"]').attr('checked', false);
+	// });
+
+	// accordion
 
 	$('.listivo_accordion_item button').on('click', function() {
 		let _this = $(this);
 
 		_this.parent().toggleClass('accordion_active');
+	});
+
+	// tooltip
+
+	$('.listivo_tooltip').tooltipster({
+		theme: 'tooltipster-borderless',
+		side: 'bottom',
+		functionPosition: function(instance, helper, position){
+          position.coord.top += 0;
+          position.coord.left += 24;
+          return position;
+      }
 	});
 
 	// swiper

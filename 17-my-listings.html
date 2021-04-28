@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>17-my-listings</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <header class="listivo_header header_bg">
+      <div class="container-max">
+        <div class="listivo_header_logo"><a href="#"><img src="./img/logo_white.png" alt="logo"></a></div>
+        <nav class="listivo_header_nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categories<i class="far fa-chevron-down"></i></a></li>
+            <li><a href="#">Listings<i class="far fa-chevron-down"></i></a></li>
+            <li><a href="#">Search<i class="far fa-chevron-down"></i></a></li>
+            <li><a href="#">Pages<i class="far fa-chevron-down"></i></a></li>
+            <li><a href="#">Moderation</a>
+              <div class="listivo_count listivo_red">5</div>
+            </li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="listivo_header_right">
+          <div class="listivo_header_right-control">
+            <ul>
+              <li><span class="listivo_icon"><i class="fal fa-bell"></i>
+                  <div class="listivo_count listivo_red">2</div></span></li>
+              <li class="listivo_drop_dashboard"><a href="#">Dashboard<i class="far fa-chevron-down"></i></a>
+                <div class="listivo_dashboard_menu">
+                  <div class="listivo_dashboard_menu-header">
+                    <div class="listivo_image"><img src="./img/reviews/2.png" alt="image"></div>
+                    <div class="listivo_text">Amedya J. Hilson</div>
+                  </div>
+                  <div class="listivo_dashboard_menu-nav">
+                    <ul>
+                      <li><a href="#"> <i class="far fa-plus-circle"></i><span>Add Listing</span></a></li>
+                      <li><a href="#"><i class="far fa-list"></i><span>Listings</span></a></li>
+                      <li><a href="#"><i class="far fa-heart"></i><span>Favourites</span>
+                          <div class="listivo_count listivo_yellow">11</div></a></li>
+                      <li><a href="#"><i class="far fa-comment-alt"></i><span>Messages</span>
+                          <div class="listivo_count listivo_purple">7</div></a></li>
+                      <li><a href="#"><i class="far fa-cog"></i><span>Settings</span></a></li>
+                    </ul>
+                  </div>
+                  <div class="listivo_dashboard_menu-nav">
+                    <ul>
+                      <li><a href="#"> <i class="far fa-power-off"></i><span>Sign Out</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul><a class="listivo_button" href="#">Submit Listing
+              <div class="listivo_icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" viewBox="0 0 14.09 14.656"><path d="M7.816,8.488 L7.816,15.283 L6.646,15.283 L6.646,8.488 L0.198,8.488 L0.198,7.393 L6.646,7.393 L6.646,0.628 L7.816,0.628 L7.816,7.393 L14.279,7.393 L14.279,8.488 L7.816,8.488 Z"/></svg></div></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="listivo_dashboard">
+      <div class="container-min">
+        <div class="listivo_title_block">
+          <h1 class="listivo_title">My Listings</h1>
+          <div class="listivo_title_block-right"><a class="listivo_button_l_white" href="#">Current Package
+              <div class="listivo_icon"><i class="fal fa-chevron-right"></i></div></a><a class="listivo_button_l_white" href="#">Buy Package
+              <div class="listivo_icon"><i class="fal fa-chevron-right"></i></div></a></div>
+        </div>
+      </div>
+      <section class="listivo_dashboard-nav">
+        <div class="container-min">
+          <div class="flex flex-wrap"><a class="listivo_dashboard-nav_item" href="#"><i class="far fa-desktop"></i><span>Moderation</span></a><a class="listivo_dashboard-nav_item listivo_active" href="#"><i class="far fa-list"></i><span>Listings</span></a><a class="listivo_dashboard-nav_item" href="#"><i class="far fa-heart"></i><span>Favorites</span></a><a class="listivo_dashboard-nav_item" href="#"><i class="far fa-comment-alt"></i><span>Messages</span></a><a class="listivo_dashboard-nav_item" href="#"><i class="far fa-cog"></i><span>Settings</span></a></div>
+        </div>
+      </section>
+      <section class="listivo_dashboard-content">
+        <div class="container-min">
+          <div class="listivo_content">
+            <div class="listivo_content-result">
+              <div class="listivo_content-result_nav">
+                <ul>
+                  <li><a class="listivo_active" href="#">All</a></li>
+                  <li><a href="#">Active</a></li>
+                  <li><a href="#">Finished</a></li>
+                </ul>
+              </div>
+              <div class="listivo_content-result_control"><b>Sort By</b>
+                <select class="listivo_field" name="sort">
+                  <option value="1">Newest Listings</option>
+                  <option value="2">Newest Listings 2</option>
+                  <option value="3">Newest Listings 3</option>
+                  <option value="4">Newest Listings 4</option>
+                  <option value="5">Newest Listings 5</option>
+                </select>
+                <div class="listivo_field_button">
+                  <input type="text" placeholder="Keyword">
+                  <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px"><path fill-rule="evenodd" fill="#0b4355" d="M8.636,-0.003 C12.863,-0.003 16.302,3.636 16.302,8.110 C16.302,9.694 15.870,11.174 15.124,12.426 L17.470,14.908 C18.136,15.612 18.136,16.754 17.470,17.457 C16.805,18.161 15.726,18.161 15.061,17.457 L12.715,14.975 C11.533,15.764 10.134,16.221 8.636,16.221 C4.408,16.221 0.969,12.583 0.969,8.110 C0.969,3.636 4.408,-0.003 8.636,-0.003 ZM8.636,14.419 C11.924,14.419 14.599,11.588 14.599,8.110 C14.599,4.631 11.924,1.800 8.636,1.800 C5.347,1.800 2.672,4.631 2.672,8.110 C2.672,11.588 5.347,14.419 8.636,14.419 Z"></path></svg></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap flex-between listivo_items listivo_items-listview listivo_listings_i">
+            <div class="card_item">
+              <div class="card_item-top"><img class="card_item-top_preview" src="./img/article/3.png" alt="image"></div>
+              <div class="card_item-bottom">
+                <div class="card_item-bottom_head">
+                  <div class="flex flex-col"><a class="listivo_title" href="#">Xig Villa & Resort Package</a>
+                    <div class="card_item-bottom_head-list"><span><b>From: </b>02.12.2021</span><span><b>To: </b>09.12.2021</span></div>
+                  </div><b class="card_item-foot_price">$1,250.00</b>
+                </div>
+                <div class="card_item-bottom_nav">
+                  <ul>
+                    <li><a href="#">View</a></li>
+                    <li><a href="#">Edit </a></li>
+                    <li><a href="#">Cancel</a></li>
+                  </ul>
+                </div>
+                <div class="flex flex-wrap flex-between">
+                  <div class="flex flex-wrap">
+                    <div class="card_item-foot_list">
+                      <div class="card_item-foot_list-item listivo_tooltip" title="Listing Views"><i class="far fa-eye"></i><span>489</span></div>
+                      <div class="card_item-foot_list-item listivo_tooltip" title="Listing Phone"><i class="far fa-phone-alt"></i><span>50</span></div>
+                      <div class="card_item-foot_list-item listivo_tooltip" title="Listing Likes"><i class="far fa-heart"></i><span>162</span></div>
+                      <div class="card_item-foot_list-item listivo_tooltip" title="Listing Comments"><i class="far fa-comment"></i><span>3</span></div>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap"><a class="listivo_button_l_white" href="#">Refresh
+                      <div class="listivo_icon"><i class="fal fa-chevron-right"></i></div></a><a class="listivo_button" href="#">Promote
+                      <div class="listivo_icon"><i class="fal fa-chevron-right"></i></div></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="card_item">
+              <div class="card_item-top"><img class="card_item-top_preview" src="./img/article/8.png" alt="image"></div>
+              <div class="card_item-bottom">
+                <div class="card_item-bottom_head">
+                  <div class="flex flex-col"><a class="listivo_title" href="#">iPhone 12 Pro Max</a>
+                    <div class="card_item-bottom_head-list"><span><b>From: </b>02.12.2021</span><span><b>To: </b>09.12.2021</span></div>
+                  </div><b class="card_item-foot_price">$1,250.00</b>
+                </div>
+                <div class="card_item-bottom_nav">
+                  <ul>
+                    <li><a href="#">View</a></li>
+                    <li><a href="#">Edit </a></li>
+                    <li><a href="#">Cancel</a></li>
+                  </ul>
+                </div>
+                <div class="flex flex-wrap flex-between">
+                  <div class="flex flex-wrap">
+                    <div class="card_item-foot_list">
+                      <div class="card_item-foot_list-item listivo_tooltip" title="Listing Views"><i class="far fa-eye"></i><span>489</span></div>
+                      <div class="card_item-foot_list-item listivo_tooltip" title="Listing Phone"><i class="far fa-phone-alt"></i><span>50</span></div>
+                      <div class="card_item-foot_list-item listivo_tooltip" title="Listing Likes"><i class="far fa-heart"></i><span>162</span></div>
+                      <div class="card_item-foot_list-item listivo_tooltip" title="Listing Comments"><i class="far fa-comment"></i><span>3</span></div>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap"><a class="listivo_button_l_white" href="#">Refresh
+                      <div class="listivo_icon"><i class="fal fa-chevron-right"></i></div></a><a class="listivo_button" href="#">Promote
+                      <div class="listivo_icon"><i class="fal fa-chevron-right"></i></div></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="card_item">
+              <div class="card_item-top"><img class="card_item-top_preview" src="./img/article/6.png" alt="image"></div>
+              <div class="card_item-bottom">
+                <div class="card_item-bottom_head">
+                  <div class="flex flex-col"><a class="listivo_title" href="#">PlayStation 5 Disc Edition</a>
+                    <div class="card_item-bottom_head-list"><span><b>From: </b>02.12.2021</span><span><b>To: </b>09.12.2021</span></div>
+                  </div><b class="card_item-foot_price">$1,250.00</b>
+                </div>
+                <div class="card_item-bottom_nav">
+                  <ul>
+                    <li><a href="#">View</a></li>
+                    <li><a href="#">Edit </a></li>
+                    <li><a href="#">Cancel</a></li>
+                  </ul>
+                </div>
+                <div class="flex flex-wrap flex-between">
+                  <div class="flex flex-wrap">
+                    <div class="card_item-foot_list">
+                      <div class="card_item-foot_list-item listivo_tooltip" title="Listing Views"><i class="far fa-eye"></i><span>489</span></div>
+                      <div class="card_item-foot_list-item listivo_tooltip" title="Listing Phone"><i class="far fa-phone-alt"></i><span>50</span></div>
+                      <div class="card_item-foot_list-item listivo_tooltip" title="Listing Likes"><i class="far fa-heart"></i><span>162</span></div>
+                      <div class="card_item-foot_list-item listivo_tooltip" title="Listing Comments"><i class="far fa-comment"></i><span>3</span></div>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap"><a class="listivo_button_l_white" href="#">Refresh
+                      <div class="listivo_icon"><i class="fal fa-chevron-right"></i></div></a><a class="listivo_button" href="#">Promote
+                      <div class="listivo_icon"><i class="fal fa-chevron-right"></i></div></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./libs/jquery/jquery.min.js"></script>
+    <script src="./libs/lazysizes/lazysizes.min.js" defer></script>
+    <script src="./libs/swiper/swiper-bundle.min.js" defer></script>
+    <script src="./libs/jquery.custom-select/jquery.custom-select.js" defer></script>
+    <script src="./libs/tooltipster/tooltipster.main.min.js" defer></script>
+    <script src="./js/common.js" defer></script>
+  </body>
+</html>
