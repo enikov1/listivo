@@ -17487,8 +17487,8 @@ readers do not read off random characters that represent icons */
   outline: none;
 }
 
-.custom-select__option:hover, .custom-select__option:focus {
-  background-color: #f9f9f9;
+.custom-select__option:hover {
+  color: var(--red);
 }
 
 .custom-select__option--value {
@@ -17589,6 +17589,9 @@ readers do not read off random characters that represent icons */
 }
 
 .custom-select__dropdown {
+  margin-top: 0.25rem;
+  -webkit-box-shadow: 0 7px 19px 1px rgba(7, 48, 61, 0.07);
+          box-shadow: 0 7px 19px 1px rgba(7, 48, 61, 0.07);
   overflow: hidden;
   z-index: 10;
   top: calc(100% - 1px);
@@ -17603,6 +17606,20 @@ readers do not read off random characters that represent icons */
   bottom: calc(100% - 1px);
   border-width: 1px 1px 0;
   border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.custom-select--active > .custom-select__option--value {
+  border-color: var(--color2);
+  color: var(--text-color);
+}
+
+.custom-select__dropdown {
+  border-radius: 0.625rem;
+}
+
+.custom-select__dropdown .custom-select__option {
+  height: auto;
+  padding: 0.875rem 1.625rem;
 }
 
 /**

@@ -14,7 +14,26 @@
         <nav class="listivo_header_nav">
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Categories<i class="far fa-chevron-down"></i></a></li>
+            <li><a href="#">Categories<i class="far fa-chevron-down"></i></a>
+              <div class="listivo_header_nav-dropdown">
+                <ul>
+                  <li><a href="#">Phones<i class="far fa-chevron-right"></i></a>
+                    <div class="listivo_header_nav-dropdown">
+                      <ul>
+                        <li><a href="#">Samsung</a></li>
+                        <li><a href="#">Apple</a></li>
+                        <li><a href="#">Redmi / Realme</a></li>
+                        <li><a href="#">Huawei</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#">Baby Accessories</a></li>
+                  <li><a href="#">Gardening</a></li>
+                  <li><a href="#">Games & Consoles</a></li>
+                  <li><a href="#">Community</a></li>
+                </ul>
+              </div>
+            </li>
             <li><a href="#">Listings<i class="far fa-chevron-down"></i></a></li>
             <li><a href="#">Search<i class="far fa-chevron-down"></i></a></li>
             <li><a href="#">Pages<i class="far fa-chevron-down"></i></a></li>
@@ -59,202 +78,223 @@
         </div>
       </div>
     </header>
-    <div id="listing_archive_grid">
-      <section class="listovo_breadcrumb_wrap">
-        <div class="container-min">
-          <div class="listovo_breadcrumb"><a href="/">Home</a><a href="#">Search</a><span>Ferrari</span></div>
-        </div>
-      </section>
-      <section class="listivo_listing_filter">
-        <div class="listivo_listing_filter-top">
-          <div class="container-min">
-            <div class="listivo_field_box"><i class="fal fa-globe"></i>
-              <input class="listivo_field" type="text" placeholder="I’m looking for ...">
-            </div>
-            <div class="listivo_field_box"><i class="fal fa-location"></i>
-              <input class="listivo_field" type="text" placeholder="Location">
-              <select class="listivo_field" name="filter">
-                <option value="1">+0 Km</option>
-                <option value="2">+1 Km</option>
-                <option value="3">+2 Km</option>
-                <option value="4">+3 Km</option>
-                <option value="5">+4 Km</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div class="listivo_listing_filter-bottom">
-          <div class="container-min">
-            <select class="listivo_field" name="filter_cat">
-              <option value="1">Category</option>
-              <option value="2">Category 2</option>
-              <option value="3">Category 3</option>
-              <option value="4">Category 4</option>
-              <option value="5">Category 5</option>
-            </select>
-            <select class="listivo_field" name="filter_subcat">
-              <option value="1">Subcategory</option>
-              <option value="2">Subcategory 2</option>
-              <option value="3">Subcategory 3</option>
-              <option value="4">Subcategory 4</option>
-              <option value="5">Subcategory 5</option>
-            </select>
-            <input class="listivo_field" type="text" placeholder="Min Price">
-            <input class="listivo_field" type="text" placeholder="Max Price">
-          </div>
-        </div>
-      </section>
-      <div class="container-min">
-        <div class="listivo_content">
-          <div class="listivo_content-result">
-            <h1 class="listivo_title">24 Result</h1>
-            <div class="listivo_content-result_control"><b>Sort By</b>
-              <select class="listivo_field" name="sort">
-                <option value="1">Newest Listings</option>
-                <option value="2">Newest Listings 2</option>
-                <option value="3">Newest Listings 3</option>
-                <option value="4">Newest Listings 4</option>
-                <option value="5">Newest Listings 5</option>
-              </select>
-              <button class="listivo_button_icon listivo_active" type="button"><i class="ti-view-list"></i></button>
-              <button class="listivo_button_icon" type="button"><i class="ti-view-grid"></i></button>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-wrap flex-between listivo_items listivo_items-listview">
-          <div class="card_item">
-            <div class="card_item-top">
-              <div class="card_item-top_author">
-                <div class="listivo_image"><img src="./img/card/avatar1.png" alt="image"></div><span class="listivo_text">By Kim Cardy</span>
-              </div><img class="card_item-top_preview" src="./img/card/1.png" alt="image">
-            </div>
-            <div class="card_item-bottom">
-              <div class="card_item-bottom_head">
-                <div class="flex flex-col"><a class="listivo_title" href="#">Mercedes X-Mark 2021</a>
-                  <ul>
-                    <li><a href="#">Model 2021 </a></li>
-                    <li><a href="#">Petrol</a></li>
-                    <li><a href="#">Manual</a></li>
-                  </ul>
-                </div><b class="card_item-foot_price">$1,250.00</b>
-              </div>
-              <p class="listivo_text">Eiusmod temporl incididunt utys labore dolor magna aliqua sed enim audy. Lorem ipsum dolor sit amet consectetur adip sicing elit sed eiusmod tempor incididunts.</p>
-              <div class="flex flex-wrap flex-between">
-                <div class="flex flex-col">
-                  <div class="card_item-foot_text"><i class="fal fa-map-marker-check"></i>18 Bubby Drive, Austin FL 78704</div><span class="card_item-foot_gray">Added 5 days ago</span>
+    <div id="listing_search_map">
+      <div class="container-fluid">
+        <div class="w-65">
+          <section class="listivo_listing_filter">
+            <div class="listivo_listing_filter-top">
+              <div class="container-fluid">
+                <div class="listivo_field_box"><i class="fal fa-globe"></i>
+                  <input class="listivo_field" type="text" placeholder="I’m looking for ...">
                 </div>
-                <button class="listivo_button_r-icon" type="button"><i class="fal fa-heart"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="card_item">
-            <div class="card_item-top">
-              <div class="card_item-top_author">
-                <div class="listivo_image"><img src="./img/card/avatar2.png" alt="image"></div><span class="listivo_text">By Kim Cardy</span>
-              </div><img class="card_item-top_preview" src="./img/card/2.png" alt="image">
-            </div>
-            <div class="card_item-bottom">
-              <div class="card_item-bottom_head">
-                <div class="flex flex-col"><a class="listivo_title" href="#">Xig Villa & Resort</a>
-                  <ul>
-                    <li><a href="#">Model 2021 </a></li>
-                    <li><a href="#">Petrol</a></li>
-                    <li><a href="#">Manual</a></li>
-                  </ul>
-                </div><b class="card_item-foot_price">$740</b>
-              </div>
-              <p class="listivo_text">Eiusmod temporl incididunt utys labore dolor magna aliqua sed enim audy. Lorem ipsum dolor sit amet consectetur adip sicing elit sed eiusmod tempor incididunts.</p>
-              <div class="flex flex-wrap flex-between">
-                <div class="flex flex-col">
-                  <div class="card_item-foot_text"><i class="fal fa-map-marker-check"></i>18 Bubby Drive, Austin FL 78704</div><span class="card_item-foot_gray">Added 5 days ago</span>
+                <div class="listivo_field_box"><i class="fal fa-location"></i>
+                  <input class="listivo_field" type="text" placeholder="Location">
+                  <select class="listivo_field" name="filter">
+                    <option value="1">+0 Km</option>
+                    <option value="2">+1 Km</option>
+                    <option value="3">+2 Km</option>
+                    <option value="4">+3 Km</option>
+                    <option value="5">+4 Km</option>
+                  </select>
                 </div>
-                <button class="listivo_button_r-icon" type="button"><i class="fal fa-heart"></i></button>
               </div>
             </div>
-          </div>
-          <div class="card_item">
-            <div class="card_item-top">
-              <div class="card_item-top_author">
-                <div class="listivo_image"><img src="./img/card/avatar2.png" alt="image"></div><span class="listivo_text">By Kim Cardy</span>
-              </div><img class="card_item-top_preview" src="./img/card/3.png" alt="image">
-            </div>
-            <div class="card_item-bottom">
-              <div class="card_item-bottom_head">
-                <div class="flex flex-col"><a class="listivo_title" href="#">Computer Table & Chair Set</a>
-                  <ul>
-                    <li><a href="#">Model 2021 </a></li>
-                    <li><a href="#">Petrol</a></li>
-                    <li><a href="#">Manual</a></li>
-                  </ul>
-                </div><b class="card_item-foot_price">$3,250.00 </b>
+            <div class="listivo_listing_filter-bottom">
+              <div class="container-fluid">
+                <select class="listivo_field" name="filter_cat">
+                  <option value="1" selected>Category</option>
+                  <option value="2">Electronics</option>
+                  <option value="3">Computers</option>
+                  <option value="4">Vehicles</option>
+                  <option value="5">Hotel Packages</option>
+                  <option value="6">Furniture</option>
+                  <option value="7">Mobile Phones</option>
+                </select>
+                <select class="listivo_field listivo_select_count" name="filter_subcat">
+                  <option value="1" data-count="" selected>Subcategory</option>
+                  <option value="2" data-count="98">Electronics</option>
+                  <option value="3" data-count="7">Computers</option>
+                  <option value="4" data-count="31">Vehicles</option>
+                  <option value="5" data-count="1">Hotel Packages</option>
+                  <option value="6" data-count="45">Furniture</option>
+                  <option value="7" data-count="3">Mobile Phones</option>
+                </select>
+                <input class="listivo_field" type="text" placeholder="Min Price">
+                <input class="listivo_field" type="text" placeholder="Max Price">
               </div>
-              <p class="listivo_text">Eiusmod temporl incididunt utys labore dolor magna aliqua sed enim audy. Lorem ipsum dolor sit amet consectetur adip sicing elit sed eiusmod tempor incididunts.</p>
-              <div class="flex flex-wrap flex-between">
-                <div class="flex flex-col">
-                  <div class="card_item-foot_text"><i class="fal fa-map-marker-check"></i>18 Bubby Drive, Austin FL 78704</div><span class="card_item-foot_gray">Added 5 days ago</span>
+            </div>
+          </section>
+          <div class="container-fluid">
+            <div class="listivo_content">
+              <div class="listivo_content-result">
+                <h1 class="listivo_title">24 Result</h1>
+                <div class="listivo_content-result_control"><b>Sort By</b>
+                  <select class="listivo_field" name="sort">
+                    <option value="1">Newest Listings</option>
+                    <option value="2">Newest Listings 2</option>
+                    <option value="3">Newest Listings 3</option>
+                    <option value="4">Newest Listings 4</option>
+                    <option value="5">Newest Listings 5</option>
+                  </select>
+                  <button class="listivo_button_icon listivo_active" type="button"><i class="ti-view-list"></i></button>
+                  <button class="listivo_button_icon" type="button"><i class="ti-view-grid"></i></button>
                 </div>
-                <button class="listivo_button_r-icon" type="button"><i class="fal fa-heart"></i></button>
               </div>
             </div>
-          </div>
-          <div class="card_item">
-            <div class="card_item-top">
-              <div class="card_item-top_author">
-                <div class="listivo_image"><img src="./img/card/avatar1.png" alt="image"></div><span class="listivo_text">By Kim Cardy</span>
-              </div><img class="card_item-top_preview" src="./img/video_bg.jpg" alt="image">
-            </div>
-            <div class="card_item-bottom">
-              <div class="card_item-bottom_head">
-                <div class="flex flex-col"><a class="listivo_title" href="#">iPhone 12 Pro Max</a>
-                  <ul>
-                    <li><a href="#">Model 2021 </a></li>
-                    <li><a href="#">Petrol</a></li>
-                    <li><a href="#">Manual</a></li>
-                  </ul>
-                </div><b class="card_item-foot_price">$8,65.00 </b>
-              </div>
-              <p class="listivo_text">Eiusmod temporl incididunt utys labore dolor magna aliqua sed enim audy. Lorem ipsum dolor sit amet consectetur adip sicing elit sed eiusmod tempor incididunts.</p>
-              <div class="flex flex-wrap flex-between">
-                <div class="flex flex-col">
-                  <div class="card_item-foot_text"><i class="fal fa-map-marker-check"></i>18 Bubby Drive, Austin FL 78704</div><span class="card_item-foot_gray">Added 5 days ago</span>
+            <div class="flex flex-wrap flex-between listivo_items listivo_items-listview">
+              <div class="card_item">
+                <div class="card_item-top">
+                  <div class="card_item-top_author">
+                    <div class="listivo_image"><img src="./img/card/avatar1.png" alt="image"></div><span class="listivo_text">By Kim Cardy</span>
+                  </div><img class="card_item-top_preview" src="./img/card/1.png" alt="image">
                 </div>
-                <button class="listivo_button_r-icon" type="button"><i class="fal fa-heart"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="card_item">
-            <div class="card_item-top">
-              <div class="card_item-top_author">
-                <div class="listivo_image"><img src="./img/card/avatar2.png" alt="image"></div><span class="listivo_text">By Kim Cardy</span>
-              </div><img class="card_item-top_preview" src="./img/card/4.png" alt="image">
-            </div>
-            <div class="card_item-bottom">
-              <div class="card_item-bottom_head">
-                <div class="flex flex-col"><a class="listivo_title" href="#">PlayStation 5 Disc Edition</a>
-                  <ul>
-                    <li><a href="#">Model 2021 </a></li>
-                    <li><a href="#">Petrol</a></li>
-                    <li><a href="#">Manual</a></li>
-                  </ul>
-                </div><b class="card_item-foot_price">$189.00</b>
-              </div>
-              <p class="listivo_text">Eiusmod temporl incididunt utys labore dolor magna aliqua sed enim audy. Lorem ipsum dolor sit amet consectetur adip sicing elit sed eiusmod tempor incididunts.</p>
-              <div class="flex flex-wrap flex-between">
-                <div class="flex flex-col">
-                  <div class="card_item-foot_text"><i class="fal fa-map-marker-check"></i>18 Bubby Drive, Austin FL 78704</div><span class="card_item-foot_gray">Added 5 days ago</span>
+                <div class="card_item-bottom">
+                  <div class="card_item-bottom_head">
+                    <div class="flex flex-col"><a class="listivo_title" href="#">Mercedes X-Mark 2021</a>
+                      <ul>
+                        <li><a href="#">Model 2021 </a></li>
+                        <li><a href="#">Petrol</a></li>
+                        <li><a href="#">Manual</a></li>
+                      </ul>
+                    </div><b class="card_item-foot_price">$1,250.00</b>
+                  </div>
+                  <p class="listivo_text">Eiusmod temporl incididunt utys labore dolor magna aliqua sed enim audy. Lorem ipsum dolor sit amet consectetur adip sicing elit sed eiusmod tempor incididunts.</p>
+                  <div class="flex flex-wrap flex-between">
+                    <div class="flex flex-col">
+                      <div class="card_item-foot_text"><i class="fal fa-map-marker-check"></i>18 Bubby Drive, Austin FL 78704</div><span class="card_item-foot_gray">Added 5 days ago</span>
+                    </div>
+                    <button class="listivo_button_r-icon" type="button"><i class="fal fa-heart"></i></button>
+                  </div>
                 </div>
-                <button class="listivo_button_r-icon" type="button"><i class="fal fa-heart"></i></button>
               </div>
+              <div class="card_item">
+                <div class="card_item-top">
+                  <div class="card_item-top_author">
+                    <div class="listivo_image"><img src="./img/card/avatar2.png" alt="image"></div><span class="listivo_text">By Kim Cardy</span>
+                  </div><img class="card_item-top_preview" src="./img/card/2.png" alt="image">
+                </div>
+                <div class="card_item-bottom">
+                  <div class="card_item-bottom_head">
+                    <div class="flex flex-col"><a class="listivo_title" href="#">Xig Villa & Resort</a>
+                      <ul>
+                        <li><a href="#">Model 2021 </a></li>
+                        <li><a href="#">Petrol</a></li>
+                        <li><a href="#">Manual</a></li>
+                      </ul>
+                    </div><b class="card_item-foot_price">$740</b>
+                  </div>
+                  <p class="listivo_text">Eiusmod temporl incididunt utys labore dolor magna aliqua sed enim audy. Lorem ipsum dolor sit amet consectetur adip sicing elit sed eiusmod tempor incididunts.</p>
+                  <div class="flex flex-wrap flex-between">
+                    <div class="flex flex-col">
+                      <div class="card_item-foot_text"><i class="fal fa-map-marker-check"></i>18 Bubby Drive, Austin FL 78704</div><span class="card_item-foot_gray">Added 5 days ago</span>
+                    </div>
+                    <button class="listivo_button_r-icon" type="button"><i class="fal fa-heart"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_item">
+                <div class="card_item-top">
+                  <div class="card_item-top_author">
+                    <div class="listivo_image"><img src="./img/card/avatar2.png" alt="image"></div><span class="listivo_text">By Kim Cardy</span>
+                  </div><img class="card_item-top_preview" src="./img/card/3.png" alt="image">
+                </div>
+                <div class="card_item-bottom">
+                  <div class="card_item-bottom_head">
+                    <div class="flex flex-col"><a class="listivo_title" href="#">Computer Table & Chair Set</a>
+                      <ul>
+                        <li><a href="#">Model 2021 </a></li>
+                        <li><a href="#">Petrol</a></li>
+                        <li><a href="#">Manual</a></li>
+                      </ul>
+                    </div><b class="card_item-foot_price">$3,250.00 </b>
+                  </div>
+                  <p class="listivo_text">Eiusmod temporl incididunt utys labore dolor magna aliqua sed enim audy. Lorem ipsum dolor sit amet consectetur adip sicing elit sed eiusmod tempor incididunts.</p>
+                  <div class="flex flex-wrap flex-between">
+                    <div class="flex flex-col">
+                      <div class="card_item-foot_text"><i class="fal fa-map-marker-check"></i>18 Bubby Drive, Austin FL 78704</div><span class="card_item-foot_gray">Added 5 days ago</span>
+                    </div>
+                    <button class="listivo_button_r-icon" type="button"><i class="fal fa-heart"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_item">
+                <div class="card_item-top">
+                  <div class="card_item-top_author">
+                    <div class="listivo_image"><img src="./img/card/avatar1.png" alt="image"></div><span class="listivo_text">By Kim Cardy</span>
+                  </div><img class="card_item-top_preview" src="./img/video_bg.jpg" alt="image">
+                </div>
+                <div class="card_item-bottom">
+                  <div class="card_item-bottom_head">
+                    <div class="flex flex-col"><a class="listivo_title" href="#">iPhone 12 Pro Max</a>
+                      <ul>
+                        <li><a href="#">Model 2021 </a></li>
+                        <li><a href="#">Petrol</a></li>
+                        <li><a href="#">Manual</a></li>
+                      </ul>
+                    </div><b class="card_item-foot_price">$8,65.00 </b>
+                  </div>
+                  <p class="listivo_text">Eiusmod temporl incididunt utys labore dolor magna aliqua sed enim audy. Lorem ipsum dolor sit amet consectetur adip sicing elit sed eiusmod tempor incididunts.</p>
+                  <div class="flex flex-wrap flex-between">
+                    <div class="flex flex-col">
+                      <div class="card_item-foot_text"><i class="fal fa-map-marker-check"></i>18 Bubby Drive, Austin FL 78704</div><span class="card_item-foot_gray">Added 5 days ago</span>
+                    </div>
+                    <button class="listivo_button_r-icon" type="button"><i class="fal fa-heart"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_item">
+                <div class="card_item-top">
+                  <div class="card_item-top_author">
+                    <div class="listivo_image"><img src="./img/card/avatar2.png" alt="image"></div><span class="listivo_text">By Kim Cardy</span>
+                  </div><img class="card_item-top_preview" src="./img/card/4.png" alt="image">
+                </div>
+                <div class="card_item-bottom">
+                  <div class="card_item-bottom_head">
+                    <div class="flex flex-col"><a class="listivo_title" href="#">PlayStation 5 Disc Edition</a>
+                      <ul>
+                        <li><a href="#">Model 2021 </a></li>
+                        <li><a href="#">Petrol</a></li>
+                        <li><a href="#">Manual</a></li>
+                      </ul>
+                    </div><b class="card_item-foot_price">$189.00</b>
+                  </div>
+                  <p class="listivo_text">Eiusmod temporl incididunt utys labore dolor magna aliqua sed enim audy. Lorem ipsum dolor sit amet consectetur adip sicing elit sed eiusmod tempor incididunts.</p>
+                  <div class="flex flex-wrap flex-between">
+                    <div class="flex flex-col">
+                      <div class="card_item-foot_text"><i class="fal fa-map-marker-check"></i>18 Bubby Drive, Austin FL 78704</div><span class="card_item-foot_gray">Added 5 days ago</span>
+                    </div>
+                    <button class="listivo_button_r-icon" type="button"><i class="fal fa-heart"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listivo_list_page"><a class="listivo_list_page-prev" href="#"><i class="fal fa-chevron-left"></i></a>
+              <ul class="listivo_list_page-nav">
+                <li><span>1</span></li>
+                <li><span class="ellipsis">.....</span></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+              </ul><a class="listivo_list_page-next" href="#"> <i class="fal fa-chevron-right"></i></a>
             </div>
           </div>
         </div>
-        <div class="listivo_list_page"><a class="listivo_list_page-prev" href="#"><i class="fal fa-chevron-left"></i></a>
-          <ul class="listivo_list_page-nav">
-            <li><span>1</span></li>
-            <li><span class="ellipsis">.....</span></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">6</a></li>
-          </ul><a class="listivo_list_page-next" href="#"> <i class="fal fa-chevron-right"></i></a>
+        <div class="listivo_search_map"><img src="./img/search_map.png" alt="image">
+          <div class="listivo_search_map-header">
+            <div class="listivo_icon"><i class="fas fa-dice-d6"></i></div>Search as I move the map
+          </div>
+          <div class="listivo_search_map-item" style="z-index:2; top: 380px; left: 50px;">$8,65.00</div>
+          <div class="listivo_search_map-item" style="z-index:1; top: 368px; left: 140px;">$8,65.00</div>
+          <div class="listivo_search_map-item" style="z-index:1; top: 505px; left: 190px;">$8,65.00</div>
+          <div class="listivo_search_map-item listivo_active" style="z-index:2; top: 530px; left: 230px;">$8,65.00</div>
+          <div class="listivo_search_map-item" style="z-index:1; top: 460px; left: 357px;">$8,65.00</div>
+          <div class="listivo_search_map-item" style="z-index:1; top: 500px; left: 500px;">$8,65.00</div>
+          <div class="listivo_search_map-item" style="z-index:1; top: 460px; left: 600px;">$8,65.00</div>
+          <div class="listivo_search_map-box">
+            <div class="listivo_search_map-box_top"><img src="./img/map_item.png" alt="image"><span>Featured</span>
+              <button type="button"><i class="fal fa-times"></i></button>
+            </div>
+            <div class="listivo_search_map-box_bottom"><span>iPhone 12 Pro Max (128gb...</span><b>$8,65.00</b></div>
+          </div>
         </div>
       </div>
     </div>

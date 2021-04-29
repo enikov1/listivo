@@ -12,6 +12,7 @@ const CustomSelect = (($) => {
     showCallback: false,
     transition: 0,
 	priceOn: false,
+	countOn: false,
   };
 
   class CustomSelect {
@@ -125,13 +126,22 @@ const CustomSelect = (($) => {
         const cssClass = this._$values.eq(i).attr('class');
 		let dataPrice = this._$values.eq(i).attr('data-price');
 		let dataVal = this._$values.eq(i).attr('data-val');
+		let dataCount = this._$values.eq(i).attr('data-count');
 		let buttonText = '';
 
 		if(this._options.priceOn == true) {
 			buttonText = `<button class="${this._options.block}__option" data-price="${dataPrice}" data-val="${dataVal}" type="button">${el}<span class="text-blue">${dataPrice}</span><span class="text-black">${dataVal}</span></button>`;
+		} else if(this._options.countOn == true) {
+			buttonText = `<button class="${this._options.block}__option" data-count="${dataCount}" type="button">${el}<span>${dataCount}</span></button>`;
 		} else {
-			buttonText = `<button class="${this._options.block}__option" data-price="${dataPrice}" data-val="${dataVal}" type="button">${el}</button>`;
+			buttonText = `<button class="${this._options.block}__option" type="button">${el}</button>`;
 		}
+
+		// if(this._options.countOn == true) {
+		// 	buttonText = `<button class="${this._options.block}__option" data-count="${dataCount}" type="button">${el}<span>${dataCount}</span></button>`;
+		// } else {
+		// 	buttonText = `<button class="${this._options.block}__option" type="button">${el}</button>`;
+		// }
 
         const $option = $(
           buttonText
@@ -149,6 +159,11 @@ const CustomSelect = (($) => {
 			  if(this._options.priceOn == true) {
 				this._$value
 					.html(el + '<span class="text-blue">' + dataPrice + '</span><span class="text-black">' + dataVal + '</span>')
+					.removeClass(this._$value.data('class')).removeData('class')
+					.addClass(cssClass).data('class', cssClass);
+			  } else if(this._options.countOn == true) {
+				this._$value
+					.html(el + '<span>' + dataCount + '</span>')
 					.removeClass(this._$value.data('class')).removeData('class')
 					.addClass(cssClass).data('class', cssClass);
 			  } else {
@@ -316,6 +331,12 @@ const CustomSelect = (($) => {
 			.removeClass(this._$value.data('class'));
 
 		
+	  } else if(this._options.countOn == true) {
+		$choiseBuffer = $(event.currentTarget).html();
+
+		this._$value
+			.html($choiseBuffer)
+			.removeClass(this._$value.data('class'));
 	  } else {
 		
 		$choiseBuffer = $(event.currentTarget).text().trim();
@@ -396,6 +417,23 @@ const CustomSelect = (($) => {
 			});
 
 			
+		} else if(this._options.countOn == true) {
+			$.each(this._$options, (i, option) => {
+				const $option = $(option);
+				let count = $option.attr('data-count');
+				$option.html(values[i] + '<span>' + count + '</span>');
+
+				// Reset option class
+				$option.attr('class', `${this._options.block}__option`);
+
+				$.each(this._$values, function () {
+					const $this = $(this);
+					if ($this.text().trim() === values[i]) {
+					$option.addClass($this.attr('class'));
+					$option.prop('disabled', $this.prop('disabled'));
+					}
+				});
+			});
 		} else {
 			$.each(this._$options, (i, option) => {
 				const $option = $(option);

@@ -14,7 +14,26 @@
         <nav class="listivo_header_nav">
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Categories<i class="far fa-chevron-down"></i></a></li>
+            <li><a href="#">Categories<i class="far fa-chevron-down"></i></a>
+              <div class="listivo_header_nav-dropdown">
+                <ul>
+                  <li><a href="#">Phones<i class="far fa-chevron-right"></i></a>
+                    <div class="listivo_header_nav-dropdown">
+                      <ul>
+                        <li><a href="#">Samsung</a></li>
+                        <li><a href="#">Apple</a></li>
+                        <li><a href="#">Redmi / Realme</a></li>
+                        <li><a href="#">Huawei</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#">Baby Accessories</a></li>
+                  <li><a href="#">Gardening</a></li>
+                  <li><a href="#">Games & Consoles</a></li>
+                  <li><a href="#">Community</a></li>
+                </ul>
+              </div>
+            </li>
             <li><a href="#">Listings<i class="far fa-chevron-down"></i></a></li>
             <li><a href="#">Pages<i class="far fa-chevron-down"></i></a></li>
             <li><a href="#">Search<i class="far fa-chevron-down"></i></a></li>
@@ -59,18 +78,22 @@
         <div class="listivo_listing_filter-bottom">
           <div class="container-min">
             <select class="listivo_field" name="filter_cat">
-              <option value="1">Category</option>
-              <option value="2">Category 2</option>
-              <option value="3">Category 3</option>
-              <option value="4">Category 4</option>
-              <option value="5">Category 5</option>
+              <option value="1" selected>Category</option>
+              <option value="2">Electronics</option>
+              <option value="3">Computers</option>
+              <option value="4">Vehicles</option>
+              <option value="5">Hotel Packages</option>
+              <option value="6">Furniture</option>
+              <option value="7">Mobile Phones</option>
             </select>
-            <select class="listivo_field" name="filter_subcat">
-              <option value="1">Subcategory</option>
-              <option value="2">Subcategory 2</option>
-              <option value="3">Subcategory 3</option>
-              <option value="4">Subcategory 4</option>
-              <option value="5">Subcategory 5</option>
+            <select class="listivo_field listivo_select_count" name="filter_subcat">
+              <option value="1" data-count="" selected>Subcategory</option>
+              <option value="2" data-count="98">Electronics</option>
+              <option value="3" data-count="7">Computers</option>
+              <option value="4" data-count="31">Vehicles</option>
+              <option value="5" data-count="1">Hotel Packages</option>
+              <option value="6" data-count="45">Furniture</option>
+              <option value="7" data-count="3">Mobile Phones</option>
             </select>
             <input class="listivo_field" type="text" placeholder="Min Price">
             <input class="listivo_field" type="text" placeholder="Max Price">

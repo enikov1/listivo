@@ -14,21 +14,21 @@ $(document).ready(function () {
 
 	// fields
 
-	$('select.listivo_field').customSelect();
+	$('select.listivo_field:not(.listivo_select_count)').customSelect();
+
+	$('select.listivo_select_count').customSelect({
+		countOn: true
+	});
+	
 
 	// $('#listivo_price').inputNumber({
 	// 	allowMaxNumber: 100,
 	// });
 
-	// $('.listivo_pay_item label').on('click', function() {
-	// 	let _this = $(this);
-	// 	_this.closest('.listivo_pay_item').addClass('listivo_active').find('input[type="checkbox"]').attr('checked', true);
-	// 	_this.closest('.listivo_pay_item').siblings().find('input[type="checkbox"]').attr('checked', false);
-	// 	_this.closest('.listivo_pay_item').siblings().removeClass('listivo_active');
-
-	// 		// _this.closest('.listivo_pay_item').find('input[type="checkbox"]').attr('checked', true);
-	// 		// _this.closest('.listivo_pay_item').siblings().find('input[type="checkbox"]').attr('checked', false);
-	// });
+	$('.listivo_pay_item input[type="radio"]').on('change', function() {
+		let _this = $(this);
+		_this.closest('.listivo_pay_item').addClass('listivo_active').siblings().removeClass('listivo_active');
+	});
 
 	// accordion
 
@@ -164,6 +164,28 @@ $(document).ready(function () {
 			prevEl: document.querySelector('#slider_article_main .slider_arrows-left'),
 		},
 	});
+
+	const slider_article_main_full = new Swiper('#slider_article_main_full', {
+		slidesPerView: 3,
+		// autoHeight: true,
+		spaceBetween: 0,
+		observer: true,
+		observeParents: true,
+		resizeObserver: true,
+		slidesPerGroup: 1,
+		loop: true,
+		
+		// centerInsufficientSlides: true,
+		centeredSlides: true,
+		centeredSlidesBounds: true,
+
+		navigation: {
+			nextEl: document.querySelector('#slider_article_main_full .slider_arrows-right'),
+			prevEl: document.querySelector('#slider_article_main_full .slider_arrows-left'),
+		},
+	});
+
+	
 
 	const more_from_user = new Swiper('#more_from_user', {
 		slidesPerView: 4,
