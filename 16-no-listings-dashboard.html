@@ -11,70 +11,76 @@
     <header class="listivo_header header_bg">
       <div class="container-max">
         <div class="listivo_header_logo"><a href="#"><img src="./img/logo_white.png" alt="logo"></a></div>
-        <nav class="listivo_header_nav">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Categories<i class="far fa-chevron-down"></i></a>
-              <div class="listivo_header_nav-dropdown">
-                <ul>
-                  <li><a href="#">Phones<i class="far fa-chevron-right"></i></a>
-                    <div class="listivo_header_nav-dropdown">
-                      <ul>
-                        <li><a href="#">Samsung</a></li>
-                        <li><a href="#">Apple</a></li>
-                        <li><a href="#">Redmi / Realme</a></li>
-                        <li><a href="#">Huawei</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li><a href="#">Baby Accessories</a></li>
-                  <li><a href="#">Gardening</a></li>
-                  <li><a href="#">Games & Consoles</a></li>
-                  <li><a href="#">Community</a></li>
-                </ul>
-              </div>
-            </li>
-            <li><a href="#">Listings<i class="far fa-chevron-down"></i></a></li>
-            <li><a href="#">Search<i class="far fa-chevron-down"></i></a></li>
-            <li><a href="#">Pages<i class="far fa-chevron-down"></i></a></li>
-            <li><a href="#">Moderation</a>
-              <div class="listivo_count listivo_red">5</div>
-            </li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="listivo_header_right">
-          <div class="listivo_header_right-control">
+        <div class="listivo_header_smart">
+          <nav class="listivo_header_nav">
             <ul>
-              <li><span class="listivo_icon"><i class="fal fa-bell"></i>
-                  <div class="listivo_count listivo_red">2</div></span></li>
-              <li class="listivo_drop_dashboard"><a href="#">Dashboard<i class="far fa-chevron-down"></i></a>
-                <div class="listivo_dashboard_menu">
-                  <div class="listivo_dashboard_menu-header">
-                    <div class="listivo_image"><img src="./img/reviews/2.png" alt="image"></div>
-                    <div class="listivo_text">Amedya J. Hilson</div>
-                  </div>
-                  <div class="listivo_dashboard_menu-nav">
-                    <ul>
-                      <li><a href="#"> <i class="far fa-plus-circle"></i><span>Add Listing</span></a></li>
-                      <li><a href="#"><i class="far fa-list"></i><span>Listings</span></a></li>
-                      <li><a href="#"><i class="far fa-heart"></i><span>Favourites</span>
-                          <div class="listivo_count listivo_yellow">11</div></a></li>
-                      <li><a href="#"><i class="far fa-comment-alt"></i><span>Messages</span>
-                          <div class="listivo_count listivo_purple">7</div></a></li>
-                      <li><a href="#"><i class="far fa-cog"></i><span>Settings</span></a></li>
-                    </ul>
-                  </div>
-                  <div class="listivo_dashboard_menu-nav">
-                    <ul>
-                      <li><a href="#"> <i class="far fa-power-off"></i><span>Sign Out</span></a></li>
-                    </ul>
-                  </div>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Categories<i class="far fa-chevron-down"></i></a>
+                <div class="listivo_header_nav-dropdown">
+                  <ul>
+                    <li><a href="#">Phones<i class="far fa-chevron-right"></i></a>
+                      <div class="listivo_header_nav-dropdown">
+                        <ul>
+                          <li><a href="#">Samsung</a></li>
+                          <li><a href="#">Apple</a></li>
+                          <li><a href="#">Redmi / Realme</a></li>
+                          <li><a href="#">Huawei</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href="#">Baby Accessories</a></li>
+                    <li><a href="#">Gardening</a></li>
+                    <li><a href="#">Games & Consoles</a></li>
+                    <li><a href="#">Community</a></li>
+                  </ul>
                 </div>
               </li>
-            </ul><a class="listivo_button" href="#">Submit Listing
-              <div class="listivo_icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" viewBox="0 0 14.09 14.656"><path d="M7.816,8.488 L7.816,15.283 L6.646,15.283 L6.646,8.488 L0.198,8.488 L0.198,7.393 L6.646,7.393 L6.646,0.628 L7.816,0.628 L7.816,7.393 L14.279,7.393 L14.279,8.488 L7.816,8.488 Z"/></svg></div></a>
+              <li><a href="#">Listings<i class="far fa-chevron-down"></i></a></li>
+              <li><a href="#">Search<i class="far fa-chevron-down"></i></a></li>
+              <li><a href="#">Pages<i class="far fa-chevron-down"></i></a></li>
+              <li><a href="#">Moderation</a>
+                <div class="listivo_count listivo_red">5</div>
+              </li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="listivo_header_right">
+            <div class="listivo_header_right-control">
+              <ul>
+                <li><span class="listivo_icon"><i class="fal fa-bell"></i>
+                    <div class="listivo_count listivo_red">2</div></span></li>
+                <li class="listivo_drop_dashboard"><a href="#" id="dashboard_menu_active">Dashboard<i class="far fa-chevron-down"></i></a>
+                  <div class="listivo_dashboard_menu">
+                    <div class="listivo_dashboard_menu-back"><i class="far fa-long-arrow-alt-left"></i><span>Back to menu</span></div>
+                    <div class="listivo_dashboard_menu-header">
+                      <div class="listivo_image"><img src="./img/reviews/2.png" alt="image"></div>
+                      <div class="listivo_text">Amedya J. Hilson</div>
+                    </div>
+                    <div class="listivo_dashboard_menu-nav">
+                      <ul>
+                        <li><a href="#"> <i class="far fa-plus-circle"></i><span>Add Listing</span></a></li>
+                        <li><a href="#"><i class="far fa-list"></i><span>Listings</span></a></li>
+                        <li><a href="#"><i class="far fa-heart"></i><span>Favourites</span>
+                            <div class="listivo_count listivo_yellow">11</div></a></li>
+                        <li><a href="#"><i class="far fa-comment-alt"></i><span>Messages</span>
+                            <div class="listivo_count listivo_purple">7</div></a></li>
+                        <li><a href="#"><i class="far fa-cog"></i><span>Settings</span></a></li>
+                      </ul>
+                    </div>
+                    <div class="listivo_dashboard_menu-nav">
+                      <ul>
+                        <li><a href="#"> <i class="far fa-power-off"></i><span>Sign Out</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul><a class="listivo_button" href="#">Submit Listing
+                <div class="listivo_icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" viewBox="0 0 14.09 14.656"><path d="M7.816,8.488 L7.816,15.283 L6.646,15.283 L6.646,8.488 L0.198,8.488 L0.198,7.393 L6.646,7.393 L6.646,0.628 L7.816,0.628 L7.816,7.393 L14.279,7.393 L14.279,8.488 L7.816,8.488 Z"/></svg></div></a>
+            </div>
           </div>
+        </div>
+        <div class="listivo_header_burger">
+          <button type="button"><i class="far fa-bars"></i></button>
         </div>
       </div>
     </header>
@@ -106,6 +112,7 @@
     <script src="./libs/swiper/swiper-bundle.min.js" defer></script>
     <script src="./libs/jquery.custom-select/jquery.custom-select.js" defer></script>
     <script src="./libs/tooltipster/tooltipster.main.min.js" defer></script>
+    <script src="./libs/fancybox/jquery.fancybox.min.js" defer></script>
     <script src="./js/common.js" defer></script>
   </body>
 </html>
